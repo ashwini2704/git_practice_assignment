@@ -1,7 +1,11 @@
-let a="naman" 
+let a="namana" 
 let b=""
 
-for(let i=1; i<=a.length; i++) {
-  b=b+a[i]
+for(let i=a.length-1; i>=0; i--) {
+  b+= a[i];
 }
-console.log(b)
+if(b == a){
+  console.log("Palindrome");
+}else{
+  console.log("Not Palindrome");
+}
